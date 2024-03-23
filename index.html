@@ -11,9 +11,11 @@
     <header>
         <p>Connecting the World, One Click at a Time</p>
         <img src="logo.png" alt="#">
+        <button id="one"><h5>Navigation Bar</h5></button>
+      
         
         </header>
-        <nav>
+        <nav class="con">
             <ul>
                <li> Home</li>
                <li>New in</li>
@@ -50,7 +52,22 @@
      <div class="k" id="k3"></div>
      <div class="k" id="k4"></div>
     </div></div>
+    <script>
+      let con=document.getElementsByClassName('con');
+      let one=document.getElementById('one');
+      one.addEventListener("click", function ok(){
+          if(con[0].style.display != "none"){
+              con[0].style.display = "none";
+          }
+          else{
+              con[0].style.display = "block";
+          }
+      });
+  
+  </script>
 </body>
 
-
+<footer>
+<p>  Made with love by Alveena Ansari..</p>
+</footer>
 </html>
