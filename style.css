@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 header{
     background-color: rgba(255, 181, 217, 0.845);
@@ -21,13 +22,16 @@ img{padding: 10px;
   display: block;
   margin: 0px auto;
 }
-nav{
+.con{
     background-color: rgba(255, 181, 217);
-
+     display: block;
     border-top: 2px solid;
     border-bottom: 2px solid;
     border-color: darkred;
   
+}
+#one{
+    display: none;
 }
 ul{  height: 50px;
     display: flex;
@@ -211,4 +215,72 @@ background-image: url(j1.jpg);
 }
 #k4{
     background-image: url(k4.jpg);
+}
+@media screen and (max-width:480px) {
+    nav{
+        display: none;
+    }
+#one{
+    width:100%;
+    display: block;
+    border-radius: 0;
+}
+    ul{
+        display: flex;
+        flex-direction: column;
+       
+        background-color: pink;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+        margin-top: 3px;
+        padding: 5px;}
+        li{
+            padding: 5px;
+            margin: 5px;
+        } 
+        .card{
+            width:65%;
+            height: 30%;
+        }
+        h3,h2{
+            margin-top: 30px;
+            font-size: 2rem;
+        }
+        .two,.three,.four{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .two{
+            height:fit-content;
+           
+        }
+        .i{
+            height: 200px;
+            width: 200px;
+            margin-bottom:10px ;
+}
+.three,.four{
+    height: fit-content;
+}
+#j1,#j3,#j5{
+    position: relative;
+    top:0px;}
+    #j5{
+        display: none;
+    }
+.j,.k{
+    height: 150px;
+    width: 150px;
+}}
+footer p{
+   
+       
+  border-bottom: 2px solid darkred;
+                      
+  border-top: none; 
+  border-right: 2px solid darkred;
+  border-left: 2px solid darkred;
+      
+    
 }
