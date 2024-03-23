@@ -54,13 +54,17 @@
     </div></div>
     <script>
       let con=document.getElementsByClassName('con');
+      let card=document.getElementsByClassName('card');
       let one=document.getElementById('one');
       one.addEventListener("click", function ok(){
           if(con[0].style.display != "none"){
               con[0].style.display = "none";
+              card[0].style.display = "flex";
+
           }
           else{
               con[0].style.display = "block";
+              card[0].style.display = "none";
           }
       });
   
