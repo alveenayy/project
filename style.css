@@ -219,7 +219,7 @@ background-image: url(j1.jpg);
 #k4{
     background-image: url(k4.jpg);
 }
-@media screen and (max-width:350px) {
+@media screen and (max-width:350px and max-height:550px) {
     nav{
         display: none;
     }
